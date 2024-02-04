@@ -3,8 +3,8 @@
         <Name> John Doe </Name>
         <Address>
             <Flat> </Flat>
-            <House> H# 38 </House>
-            <Road> R# 3 </Road>
+            <House> 38 </House>
+            <Road>  3 </Road>
             <Location> Banani </Location>
             <city> Dhaka </city>
         </Address>
@@ -17,9 +17,9 @@
     <person>
         <Name> Mark Jukerburg </Name>
         <Address>
-            <Flat> #A/1 </Flat>
-            <House> H# 20 </House>
-            <Road> R# 18 </Road>
+            <Flat> A/1 </Flat>
+            <House> 20 </House>
+            <Road> 18 </Road>
             <Location> Mirpur </Location>
             <city> Dhaka </city>
         </Address>
@@ -33,8 +33,8 @@
         <Name> John Doe </Name>
         <Address>
             <Flat> </Flat>
-            <House> H# 38 </House>
-            <Road> R# 3 </Road>
+            <House> 38 </House>
+            <Road> 3 </Road>
             <Location> Motijheel </Location>
             <city> </city>
         </Address>

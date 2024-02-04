@@ -1,0 +1,47 @@
+<Persons>
+    <person>
+        <Name> John Doe </Name>
+        <Address>
+            <Flat> </Flat>
+            <House> 38 </House>
+            <Road>  3 </Road>
+            <Location> Banani </Location>
+            <city> Dhaka </city>
+        </Address>
+        <Department> Sales </Department>
+        <Salary>
+            <Currency> Dollar </Currency>
+            <Amount> 20000 </Amount>
+        </Salary>
+    </person>
+    <person>
+        <Name> Mark Jukerburg </Name>
+        <Address>
+            <Flat> A/1 </Flat>
+            <House> 20 </House>
+            <Road> 18 </Road>
+            <Location> Mirpur </Location>
+            <city> Dhaka </city>
+        </Address>
+        <Department> accounts </Department>
+        <Salary>
+            <Currency> Dollar </Currency>
+            <Amount> 12000 </Amount>
+        </Salary>
+    </person>
+    <person>
+        <Name> John Doe </Name>
+        <Address>
+            <Flat> </Flat>
+            <House> 38 </House>
+            <Road> 3 </Road>
+            <Location> Motijheel </Location>
+            <city> </city>
+        </Address>
+        <Department> Human Resource </Department>
+        <Salary>
+            <Currency> Dollar </Currency>
+            <Amount> 30000 </Amount>
+        </Salary>
+    </person>
+</Persons>

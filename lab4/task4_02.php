@@ -1,16 +1,16 @@
 <?php
 
-$vatRate = 15; 
+$vat_Rate = 15; 
 
-function calculateVAT($amount, $vatRate) {
-    $vat = ($amount * $vatRate) / 100;
+function cal_VAT($amount, $vat_Rate) {
+    $vat = ($amount * $vat_Rate) / 100;
     return $vat;
 }
 
 $amount = 500; 
 
-$vatAmount = calculateVAT($amount, $vatRate);
+$vat_Amount = cal_VAT($amount, $vat_Rate);
 
-echo "The VAT for the amount $" . $amount . " is $" . $vatAmount;
+echo "The VAT for the amount $" . $amount . " is $" . $vat_Amount;
 
 ?>

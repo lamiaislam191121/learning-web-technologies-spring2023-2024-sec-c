@@ -1,6 +1,6 @@
 <?php
 
-function checkOddOrEven($number) {
+function even_odd($number) {
     if ($number % 2 == 0) {
         echo $number . " is Even";
     } else {
@@ -9,6 +9,6 @@ function checkOddOrEven($number) {
 }
 $number = 8;
 
-checkOddOrEven($number);
+even_odd($number);
 
 ?>

@@ -1,53 +1,96 @@
 <!DOCTYPE html>
-<html land="en">
+<html lang="en">
 <head>
-    <meta charset="UTF=8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <title>Registration</title>
-    <style>
-        table, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
 </head>
 <body>
-    <table border = "1" >
-        <th>
-            <h2 style="display: inline;">xCompany</h2>
-            <a href="#"> Bob </a>
-            <a href="#"> Logout </a>
-        </th>
-    <tr>
-     <td>
-             <strong>Account</strong>
-                    <ul>
-                        <li><a href="./page-1.html">Dashboard</a></li>
-                        <li><a href="./page-1.html">View profile</a></li>
-                        <li><a href="./page-1.html">Edit profile</a></li>
-                        <li><a href="./page-1.html">Change profile picture</a></li>
-                        <li><a href="./page-1.html">Change password</a></li>
-                        <li><a href="./page-1.html">Logout</a></li>
-                   </ul>
+    <form action="" method="post">
+    <table border="1" cellspacing="0" align="center" cellpadding="5">
+        <tr>
+            <td><img src="img/logo.png" alt="" height="70px">
+            <h1 align="left">XCompany</h1>
         </td>
-        <td>
-        <fieldset>
-            <legend>Edit Profile</legend>
-            Name:<input type="text" name="name"> <hr> 
-            Email:<input type="email" name="email"> <hr> 
-            Gender: <input type="radio" name="gender-male"> male 
-                    <input type="radio" name="gender-female"> female 
-                    <input type="radio" name="gender-others"> others 
-         Date of birth:<input type="number" name="day" min="1" max="31" required> 
-                       <input type="number" name="month" min="1" max="12" required>
-                       <input type="number" name="year" min="1000" max="100000" required> (dd/mm/yyyy)
-         <hr>
-         <input type="submit" name="submit">
-        </td>
-    </tr>
-    <tr>
-        <td footer style="text-align: center;">copyright@2017</footer></td>
-    </tr>
- </body>
-</head>
+            <td width="500px" align="right">
+               
+                Logged In as <a href="login.html">Bob</a>|
+                <a href="logout.html">Logout</a>
+            </td>
+        </tr>
+        <tr>
+           
+            <td align="left"><b>Account</b> <hr>
+                <ul>
+                    <li><a href="dashboard.php">DashBoard</a></li>
+                    <li><a href="viewprofile.php">View Profile</a></li>
+                    <li><a href="editprofile.php">Edit Profile</a></a></li>
+                    <li><a href="changepicture.php">Change Profile Picture</a></li>
+                    <li><a href="changepassword.php">Change Password</a></li>
+                    <li><a href="logout.php">log Out</a></li>
+                </ul>
+            </td>
+            <td >
+                <form action="" method="">
+                    <fieldset>
+                        <legend><b>EDIT PROFILE</b></legend>
+                        <table align="center">
+                            <tr>
+                                <td>Name</td>
+                                <td>:<input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><hr></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>
+                                    :<input type="email" name="email" id="">
+                                    <input type="submit"  value="i" title="">
+                                </td>
+                               
+                            </tr>
+                           
+                            <tr>
+                                <td colspan="2"><hr></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>
+                                    <input type="radio" name="gender" id="">Male
+                                    <input type="radio" name="gender" id="">Female
+                                    <input type="radio" name="gender" id="">Other
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <td colspan="2"><hr></td>
+                            </tr>
+                            <tr>
+                                <td>Date Of Birth</td>
+                                <td>
+                                    :<input type="text" name="" id=""><br><i>(dd/mm/yyyy)</i>
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <td colspan="2"><hr></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" name="submit" id="" value="Submit">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Copyright (c) 2017</td>
+        </tr>
+    </table>
+    </form>
+</body>
 </html>
+ 

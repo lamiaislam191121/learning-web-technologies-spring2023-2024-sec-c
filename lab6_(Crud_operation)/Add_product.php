@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html land="en">
+<html>
 <head>
-    <meta charset="UTF=8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <title>Add Product</title>
-    <style>
-        table, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
+  <title>Add Product</title>
+  <style>
+    fieldset {
+      width: 250px;
+    }
+  </style>
 </head>
 <body>
-<table border = "1" >
-    <tr>
-        <td>
-            <fieldset>
-                <legend>Login</legend>
-                    Name <br> <input type="text" name="name"></br>
-                    Buying price <br> <input type="number" name="Buying price"></br>
-                    Selling price <br> <input type="number" name="Selling price"></br>
-                    <hr>
-                <input type="checkbox" name="Display"> Display <br> 
-                <input type="button" name="save" VALUE ="SAVE">
-            </fieldset>
-         </td>
-    </tr>
- </body>
-</head>
+
+  <form action="database.php" method="POST">
+    <fieldset>
+      <legend>
+        <b>ADD PRODUCT</b>
+      </legend>
+
+      <label for="name">Name:</label>  <br>
+      <input type="text" id="name" name="Name"><br><br>
+
+      <label for="buying_price">Buying Price:</label>
+      <input type="text" id="buying_price" name="buying_price"><br><br>
+
+      <label for="selling_price">Selling Price:</label>
+      <input type="text" id="selling_price" name="selling_price"><br><br>
+      
+      <hr>
+
+      <input type="checkbox" id="display" name="display" value="true">
+      <label for="display">Display</label>
+
+      <hr>
+
+      <input type="submit" name="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
 </html>

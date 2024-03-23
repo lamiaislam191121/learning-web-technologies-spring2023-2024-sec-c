@@ -2,18 +2,17 @@
 session_start();
 require 'config.php';
 
-if (isset($_POST["signup"])) {
+if (isset($_POST["register"])) {
     $id = $_POST["id"];
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $username = $_POST["username"];
     $password = $_POST["password"];
     $confirmpassword = $_POST["confirmpassword"];
     $usertype = $_POST["usertype"];
 
     $errors = array();
 
-    if (empty($id) OR empty($name) OR empty($email) OR empty($username) OR empty($password) OR empty($confirmpassword)) {
+    if (empty($id) OR empty($name) OR empty($email) OR empty($password) OR empty($confirmpassword)) {
         array_push($errors, "All fields are required");
     }
     if (empty($id)) {
@@ -31,23 +30,6 @@ if (isset($_POST["signup"])) {
         array_push($errors, "Email Must Be Valid");
     }
 
-    if (empty($username)) {
-        array_push($errors, "username is required");
-    } else {
-        $username = htmlspecialchars($username);
-        $isValid = true;
-        for ($i = 0; $i < strlen($username); $i++) {
-            $char = $username[$i];
-            if (!ctype_alpha($char)) { 
-                $isValid = false;
-                break;
-            }
-        }
-        if (!$isValid) {
-            array_push($errors, "Username should contain only upper case and lower case characters");
-        }
-    }
-
     if(strlen($password) < 4){
         array_push($errors, "Password Must Be Atleast 4 Characters");
     }
@@ -62,14 +44,14 @@ if (isset($_POST["signup"])) {
         foreach($errors as $error)
         echo "<div class='alert alert-danger'>$error</div>";
     } else {
-        $duplicate = mysqli_query($conn, "SELECT * FROM user_info WHERE id = '$id' OR username = '$username' OR email = '$email'");
+        $duplicate = mysqli_query($conn, "SELECT * FROM user_info WHERE id = '$id' OR email = '$email'");
         if (mysqli_num_rows($duplicate) > 0) {
             echo "<script> alert('ID or username or email has already been taken'); </script>";
         } else {
-            $result = "INSERT INTO user_info (id, name, email, username, password, usertype) VALUES ('$id', '$name', '$email', '$username', '$password', '$usertype')";
+            $result = "INSERT INTO user_info (id, name, email, password, usertype) VALUES ('$id', '$name', '$email', '$password', '$usertype')";
             if (mysqli_query($conn, $result)) {
                 echo "<script> alert('Signup Successful'); </script>";
-                $_SESSION["login"] = true;
+                $_SESSION["reg"] = true;
                 header("location: login.php");
             } else {
                 echo "<script> alert('Error: " . mysqli_error($conn) . "'); </script>";

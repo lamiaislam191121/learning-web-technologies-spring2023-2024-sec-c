@@ -6,9 +6,15 @@
     <title>Welcome</title>
 </head>
     <body>
-        <h1>Welcome Anne! </h1>
-        <a class="nav-link active" aria-current="page" href="Profile">Profile</a>
-        <a class="nav-link active" aria-current="page" href="Change Password">Change password</a>
-        <a class="nav-link active" aria-current="page" href="logout">Logout</a>
+    <?php
+        session_start();
+
+        if (isset($_SESSION['username'])) {
+            echo "<h1>Welcome " . htmlspecialchars($_SESSION['username']) . "!</h1>";
+        }
+    ?>
+        <a class="nav-link active" aria-current="page" href="profile.php">Profile</a><br>
+        <a class="nav-link active" aria-current="page" href="changepass.php">Change password</a><br>
+        <a class="nav-link active" aria-current="page" href="logout.php">Logout</a><br>
     </body>
 </html>

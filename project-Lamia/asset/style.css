@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #065989;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #71DED6;
+    color: #000101;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group .form-control {
+    flex: 1;
+    margin-right: 5px; /* Adjust as needed */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Form Style */
+.form-container {
+   
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+/* Login page */
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* File Upload Page */
+.file-select {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+/* Viwe Profile Page */
+
+.profilebody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.profile-card-margin {
+    margin: 10px;
+}
+
+.card-header {
+    background-color: #0077cc;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 16px;
+    line-height: 1.6;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.card-body p {
+    margin: 10px 0;
+}
+
+.card-body span {
+    float: right;
+    color: #333333;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.card-footer a:hover {
+
+    background-color:#0077cc;
+    transition: background-color 0.3s ease;
+    color: #eeeeee;
+    border-radius: 5px;
+}
+
+/* Hover effect for body content */
+.card-body p:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Signup Page */
+
+.upvote {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline; 
+}
